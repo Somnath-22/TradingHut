@@ -44,7 +44,7 @@ export default function CoinsTable() {
     },
     pagination: {
       "& .MuiPaginationItem-root": {
-        color: "gold",
+        color: "#8312C3",
       },
     },
   });
@@ -90,26 +90,27 @@ export default function CoinsTable() {
           variant="h4"
           style={{ margin: 18, fontFamily: "Montserrat" }}
         >
-          Cryptocurrency Prices by Market Cap
+          Cryptocurrency Prices by Market Capitalization
         </Typography>
         <TextField
-          label="Search For a Crypto Currency.."
+          label="Search For a Crypto Currency..."
           variant="outlined"
           style={{ marginBottom: 20, width: "100%" }}
           onChange={(e) => setSearch(e.target.value)}
         />
         <TableContainer component={Paper}>
           {loading ? (
-            <LinearProgress style={{ backgroundColor: "gold" }} />
+            <LinearProgress style={{ backgroundColor: "#8312C3" }} />
           ) : (
             <Table aria-label="simple table">
-              <TableHead style={{ backgroundColor: "#EEBC1D" }}>
+              <TableHead style={{ backgroundColor: "#8312C3" }}>
                 <TableRow>
                   {["Coin", "Price", "24h Change", "Market Cap"].map((head) => (
                     <TableCell
                       style={{
-                        color: "black",
-                        fontWeight: "700",
+                        color: "#FFFFFF",
+                        fontSize:"1.2rem",
+                        fontWeight: "600",
                         fontFamily: "Montserrat",
                       }}
                       key={head}
@@ -147,7 +148,8 @@ export default function CoinsTable() {
                             style={{ marginBottom: 10 }}
                           />
                           <div
-                            style={{ display: "flex", flexDirection: "column" }}
+                            style={{ display: "flex", 
+                            flexDirection: "column" }}
                           >
                             <span
                               style={{
@@ -191,7 +193,6 @@ export default function CoinsTable() {
           )}
         </TableContainer>
 
-        {/* Comes from @material-ui/lab */}
         <Pagination
           count={(handleSearch()?.length / 10).toFixed(0)}
           style={{

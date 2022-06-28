@@ -6,18 +6,20 @@ import {
   Toolbar,
   Typography,
 } from "@material-ui/core";
+
 import {
   createTheme,
   makeStyles,
   ThemeProvider,
 } from "@material-ui/core/styles";
+
 import { useHistory } from "react-router-dom";
 import { CryptoState } from "../CryptoContext";
 
 const useStyles = makeStyles((theme) => ({
   title: {
     flex: 1,
-    color: "gold",
+    color: "#8312C3",
     fontFamily: "Montserrat",
     fontWeight: "bold",
     cursor: "pointer",
@@ -49,7 +51,7 @@ function Header() {
               variant="h6"
               className={classes.title}
             >
-              Crypto Hunter
+              Trading Hut
             </Typography>
             {/* <Button color="inherit">Login</Button> */}
             <Select

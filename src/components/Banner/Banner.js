@@ -3,7 +3,7 @@ import Carousel from "./Carousel";
 
 const useStyles = makeStyles((theme) => ({
   banner: {
-    backgroundImage: "url(./banner2.jpg)",
+    backgroundImage: "url(./bannerbg.jpg)",
   },
   bannerContent: {
     height: 400,
@@ -41,17 +41,18 @@ function Banner() {
               fontFamily: "Montserrat",
             }}
           >
-            Crypto Hunter
+            Trading Hut
           </Typography>
           <Typography
             variant="subtitle2"
             style={{
-              color: "darkgrey",
+              color: "#EAEAEA",
+              fontSize: "1.2rem",
               textTransform: "capitalize",
               fontFamily: "Montserrat",
             }}
           >
-            Get all the Info regarding your favorite Crypto Currency
+            Don't get mad, Get Trading
           </Typography>
         </div>
         <Carousel />
